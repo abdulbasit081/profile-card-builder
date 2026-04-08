@@ -1,0 +1,87 @@
+:root {
+  --primary: #4f46e5;
+  --bg: #f9fafb;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: var(--bg);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.card-title {
+  color: blue;
+}
+
+#main-title {
+  color: var(--primary);
+}
+
+.card > h2 {
+  font-size: 22px;
+}
+
+.card .skills span {
+  display: inline-block;
+  margin: 5px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: var(--primary);
+  color: white;
+  font-size: 12px;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    max-width: 320px;
+  }
+}
