@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card Builder</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- FORM PANEL -->
+    <form id="profileForm">
+      <fieldset>
+        <legend>Profile Info</legend>
+
+        <label for="name">Full Name</label>
+        <input id="name" type="text" required />
+
+        <label for="title">Job Title</label>
+        <input id="title" type="text" required />
+
+        <label for="bio">Bio</label>
+        <textarea id="bio"></textarea>
+
+        <label for="color">Avatar Color</label>
+        <input id="color" type="color" />
+
+        <p>Skills</p>
+        <label><input type="checkbox" value="HTML" /> HTML</label>
+        <label><input type="checkbox" value="CSS" /> CSS</label>
+        <label><input type="checkbox" value="JavaScript" /> JavaScript</label>
+        <label><input type="checkbox" value="React" /> React</label>
+
+        <button type="submit">Generate Card</button>
+        <p id="error" class="error"></p>
+      </fieldset>
+    </form>
+
+    <!-- CARD PREVIEW -->
+    <div class="card" id="card">
+      <div class="avatar" id="avatar"></div>
+      <h2 class="card-title" id="main-title">Your Name</h2>
+      <p id="card-title">Your Title</p>
+      <p id="card-bio">Your bio will appear here...</p>
+      <div class="skills" id="skills"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
